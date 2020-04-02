@@ -3,11 +3,6 @@ Created on Feb 24, 2019
 @author: Burkhard A. Meier
 '''
 
-
-
-
-
-
 import tkinter as tk        
 from tkinter import ttk, messagebox, Menu    
 
