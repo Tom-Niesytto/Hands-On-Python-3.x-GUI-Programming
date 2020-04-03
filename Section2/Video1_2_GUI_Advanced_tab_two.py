@@ -31,8 +31,13 @@ def create_widgets():
         update_label.config(text=text_two)
     
     tab_control = ttk.Notebook(gui)             # create tab control (aka Notebook)
+    #Ttk Notebook widget manages a collection of windows and displays a single one at a time.
+    #Each child window is associated with a tab, which the user may select to change the currently-displayed window.
     
     tab_one = ttk.Frame(tab_control)            # create a frame       
+    #A frame is rectangular region on the screen.
+    #The frame widget is mainly used as a geometry master for other widgets, or to provide padding between other widgets.
+    
     tab_control.add(tab_one, text='Tab 1')
     
     tab_two = ttk.LabelFrame(tab_control, text=' Webpage source ')            # create a label frame       
@@ -44,14 +49,14 @@ def create_widgets():
     button_one = ttk.Button(tab_one, text="Click Me", command=click_event_one)  
     button_one.grid(column=0, row=0, padx=10, pady=4)                               # add y-padding   
     
-    entry_one_str = tk.StringVar(value='')      # variable to hold string
+    entry_one_str = tk.StringVar(value='...')      # variable to hold string
     entry_one = ttk.Entry(tab_one, width=20, textvariable=entry_one_str)                   
     entry_one.grid(column=1, row=0) 
     
     button_two = ttk.Button(tab_one, text="Click Me", command=click_event_two)  
     button_two.grid(column=0, row=1)                       
     
-    entry_two_str = tk.StringVar(value='')      # variable to hold string
+    entry_two_str = tk.StringVar(value='...')      # variable to hold string
     entry_two = ttk.Entry(tab_one, width=20, textvariable=entry_two_str)                   
     entry_two.grid(column=1, row=1)
     

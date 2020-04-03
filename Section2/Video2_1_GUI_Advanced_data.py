@@ -4,10 +4,6 @@ Created on Mar 5, 2019
 '''
 
 
-
-
-
-
 import tkinter as tk        
 from tkinter import ttk, Menu, scrolledtext    
 import sys
@@ -33,12 +29,13 @@ def tab_two_widgets(parent, width=70, height=21):
 
 def tab_three_widgets(parent, data=None):
     if not data:
-        data = [x + 1 for x in range(50)]       # list comprehension to create data
+        data = [x + 1.0 for x in range(50)]       # list comprehension to create data
     combo_str = tk.StringVar()
     combo = ttk.Combobox(parent, width=20, textvariable=combo_str)
     combo.grid(column=0, row=0, padx=8, pady=6)
     combo['values'] = data                      # insert the data from list 
-    combo.current(0)                            
+    combo.current(5)
+    #print(combo.get())
     
 # create the controls in a function
 def create_widgets():    

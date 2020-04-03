@@ -4,10 +4,6 @@ Created on Mar 5, 2019
 '''
 
 
-
-
-
-
 import tkinter as tk        
 from tkinter import ttk, Menu, scrolledtext    
 import sys
@@ -26,7 +22,20 @@ def read_url():
 
 def tab_two_widgets(parent):
     text = read_url()
+    #print(type())
     scroll = scrolledtext.ScrolledText(parent, width=46, height=8, wrap=tk.WORD)
+    #tk.INSERT
+    #The position of the insertion cursor in the text widget.
+    #This constant is equal to the string 'insert'.
+    #
+    #insert(index, text), insert(index, text, tags)
+    #Insert text at the given position (typically INSERT or END).
+    #If you provide one or more tags, they are attached to the new text.
+    #
+    #index(index)
+    #Return the "line.column" index corresponding to the given index.
+    print(scroll.index(tk.INSERT))
+    #scroll.insert(2.0, text)
     scroll.insert(tk.INSERT, text)
     scroll.grid(column=0, row=0)
 

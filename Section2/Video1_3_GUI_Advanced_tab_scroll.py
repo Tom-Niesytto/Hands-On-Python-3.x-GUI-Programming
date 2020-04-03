@@ -3,11 +3,6 @@ Created on Mar 5, 2019
 @author: Burkhard A. Meier
 '''
 
-
-
-
-
-
 import tkinter as tk        
 from tkinter import ttk, Menu, scrolledtext    
 import sys
@@ -19,9 +14,10 @@ gui.geometry('600x400+450+150')
 gui.title('GUI written in tkinter')     
 
 
-def tab_two_widgets(parent):
+def additional_widget_setup(parent, _col=0, _row=0):
     scroll = scrolledtext.ScrolledText(parent, width=48, height=8, wrap=tk.WORD)
-    scroll.grid(column=0, row=0)
+    #scroll.grid(column=_col, row=_row,columnspan=2)
+    scroll.grid(column=_col, row=_row)
 
 
 # create the controls in a function
@@ -43,7 +39,8 @@ def create_widgets():
     tab_two = ttk.LabelFrame(tab_control, text=' Webpage source ')            # create a frame       
     tab_control.add(tab_two, text='Tab 2')  
     
-    tab_two_widgets(parent=tab_two)
+    #tab_two_widget_setup(parent=tab_one,_col=0,_row=3)
+    additional_widget_setup(parent=tab_two)
     
     tab_control.pack(fill='both')
     

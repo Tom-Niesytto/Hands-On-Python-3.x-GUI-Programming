@@ -30,7 +30,7 @@ def create_widgets():
         text_two = entry_two_str.get()                                
         update_label.config(text=text_two)
     
-    tab_control = ttk.Notebook(gui)             # create tab control (aka Notebook)
+    tab_control = ttk.Notebook(gui)             # create tab control (aka Notebook - note Notebook is ttk only widget)
     
     tab_one = ttk.Frame(tab_control)            # create a frame       
     tab_control.add(tab_one, text='Tab 1')      # add the tab to the tab control
