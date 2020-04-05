@@ -17,9 +17,10 @@ from time import sleep         # careful - this can freeze the GUI
 
 
 class GuiOOP():
+    #runs after instance of the class is created
     def __init__(self):  
         self.gui = tk.Tk()                           
-        self.gui.geometry('660x400+450+150')                 
+        self.gui.geometry('660x450+450+150')                 
         self.gui.title('GUI written in tkinter')   
         self.gui.resizable(False, False)                     
         

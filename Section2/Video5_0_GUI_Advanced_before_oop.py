@@ -3,11 +3,6 @@ Created on Mar 5, 2019
 @author: Burkhard A. Meier
 '''
 
-
-
-
-
-
 import tkinter as tk        
 from tkinter import ttk, Menu, scrolledtext, PhotoImage    
 import sys

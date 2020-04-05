@@ -4,10 +4,6 @@ Created on Mar 5, 2019
 '''
 
 
-
-
-
-
 import tkinter as tk        
 from tkinter import ttk, Menu, scrolledtext, PhotoImage    
 import sys
@@ -17,7 +13,7 @@ from time import sleep         # careful - this can freeze the GUI
 
 
 gui = tk.Tk()                           
-gui.geometry('660x400+450+150')                 # widen gui width to fit button image
+gui.geometry('660x460+450+150')                 # widen gui width to fit button image (and 460 to show progress button)
 gui.title('GUI written in tkinter')   
 gui.resizable(False, False)                     # disable resizing the GUI
 
@@ -29,6 +25,7 @@ def read_url(url="https://docs.python.org/3/"):
     web_text = f.read()
     return web_text
 
+#General question is - how do I know if the right type of parent is passed?
 def tab_two_widgets(parent, width=78, height=21):
     text = read_url()
     scroll = scrolledtext.ScrolledText(parent, width=width, height=height, wrap=tk.WORD)  
@@ -38,7 +35,7 @@ def tab_two_widgets(parent, width=78, height=21):
        
 def tab_three_widgets(parent, data=None):
     if not data:
-        data = [x + 1 for x in range(50)]       # list comprehension to create data
+        data = [x + 1.0 for x in range(50)]       # list comprehension to create data
     combo_str = tk.StringVar()
     combo = ttk.Combobox(parent, width=20, textvariable=combo_str)
     combo.grid(column=0, row=0, padx=8, pady=6, sticky='N')
@@ -70,9 +67,11 @@ def create_widgets():
     tab_two_widgets(parent=tab_two)
     
     tab_three = ttk.Frame(tab_control) 
+    #tab_control.add(tab_three)
     tab_control.add(tab_three, text='Tab 3')
     tab_three_widgets(parent=tab_three)
         
+    #tab_control.pack()    
     tab_control.pack(fill='both')
 
     

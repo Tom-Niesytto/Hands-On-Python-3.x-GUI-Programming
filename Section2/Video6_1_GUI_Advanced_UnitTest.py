@@ -6,7 +6,8 @@ Created on Mar 5, 2019
 
 
 
-from Section2.Video5_1_GUI_Advanced_oop import GuiOOP
+from Video5_1_GUI_Advanced_oop import GuiOOP
+#from Section2.Video5_1_GUI_Advanced_oop import GuiOOP
 
 # Create instance of Gui class
 gui_instance = GuiOOP()

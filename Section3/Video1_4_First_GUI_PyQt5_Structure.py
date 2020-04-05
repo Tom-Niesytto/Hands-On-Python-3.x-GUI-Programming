@@ -4,10 +4,6 @@ Created on Mar 7, 2019
 '''
 
 
-
-
-
-
 # Structure of PyQt5 GUIs
 #------------------------
 

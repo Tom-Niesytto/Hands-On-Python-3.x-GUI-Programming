@@ -3,15 +3,12 @@ Created on Mar 5, 2019
 @author: Burkhard A. Meier
 '''
 
-
-
-
-import unittest
+import pytest
 #from Section2.Video5_1_GUI_Advanced_oop import GuiOOP
 from Section2.Video5_1_GUI_Advanced_oop import GuiOOP
 
 
-class GuiUnitTests(unittest.TestCase):
+class Test_Gui(pytest.Test):
     
     def setUp(self):
         print('inside setUp...')
@@ -48,9 +45,9 @@ class GuiUnitTests(unittest.TestCase):
         self.assertEqual(label_text, new_text)    # assert new_text
     
 
-#==========================
-if __name__ == '__main__':
-    unittest.main()
+# #==========================
+# if __name__ == '__main__':
+#     pytest.main()
     
     
     
