@@ -3,12 +3,9 @@ Created on Mar 8, 2019
 @author: Burkhard A. Meier
 '''
 
-
-
-
 import sys
 from PyQt5 import QtWidgets
-from Section3.Designer_code.Video3_First_Design import Ui_MainWindow
+from Designer_code.Video3_First_Design import Ui_MainWindow
 
 
 class RunDesignerGUI():

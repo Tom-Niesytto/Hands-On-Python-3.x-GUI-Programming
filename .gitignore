@@ -133,3 +133,6 @@ dmypy.json
 
 # Komodo stuff
 *komodoproject
+
+#test stuff
+test*

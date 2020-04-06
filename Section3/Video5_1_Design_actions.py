@@ -8,7 +8,7 @@ Created on Mar 8, 2019
 
 import sys
 from PyQt5 import QtWidgets
-from Section3.Designer_code.Video5_First_Design import Ui_MainWindow
+from Designer_code.Video5_First_Design import Ui_MainWindow
 
 
 class RunDesignerGUI():
@@ -21,13 +21,10 @@ class RunDesignerGUI():
         self.ui.setupUi(self.MainWindow)
         
         self.update_widgets()
-        self.widget_actions()
         
         self.MainWindow.show()
         sys.exit(app.exec_())
     
-    def widget_actions(self):
-        pass
      
     def update_widgets(self):
         self.MainWindow.setWindowTitle('PyQt5 GUI')         # use: self.MainWindow
