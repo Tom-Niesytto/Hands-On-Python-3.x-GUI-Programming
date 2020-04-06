@@ -2,13 +2,6 @@
 Created on Mar 7, 2019
 @author: Burkhard A. Meier
 '''
-
-
-
-
-
-
-
  
 # class inheriting from QMainWindow  
 import sys

@@ -3,16 +3,9 @@ Created on Mar 7, 2019
 @author: Burkhard A. Meier
 '''
 
-
-
-
-
-
-
- 
 # class inheriting from QMainWindow  
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QAction 
+from PyQt5.QtWidgets import QApplication, QMainWindow, QAction, qApp
  
 
 class GUI(QMainWindow):                 # inherit from QMainWindow
@@ -34,7 +27,14 @@ class GUI(QMainWindow):                 # inherit from QMainWindow
         new_action = QAction('New', self)       # create an Action      
         file_menu.addAction(new_action)         # add Action to menu
           
-        new_action.setStatusTip('New File')     # statusBar updated 
+        new_action.setStatusTip('New File')     # statusBar updated
+        
+        #added Quit menu item 
+        quit_action = QAction('Quit', self)
+        quit_action.triggered.connect(qApp.quit)
+        quit_action.setShortcut('Ctrl+Q')
+        file_menu.addAction(quit_action)
+        
 
 if __name__ == '__main__':     
     app = QApplication(sys.argv)        # create Application     

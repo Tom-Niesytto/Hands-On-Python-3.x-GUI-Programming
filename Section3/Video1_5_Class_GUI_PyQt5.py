@@ -17,6 +17,7 @@ class GUI():
          
     def initUI(self):   
         self.win = QWidget()                    # create Window (as member)
+                                                #Note: constructor of QWidget class call __init__ method on that class
         self.win.setWindowTitle('PyQt5 GUI')    # call method
         
     def show(self):
