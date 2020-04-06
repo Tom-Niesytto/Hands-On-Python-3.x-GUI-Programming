@@ -4,12 +4,6 @@ Created on Mar 7, 2019
 '''
 
 
-
-
-
-
-
- 
 # class inheriting from QWidget  
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget 
