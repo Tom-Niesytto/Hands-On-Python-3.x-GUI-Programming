@@ -8,7 +8,7 @@ Created on Mar 10, 2019
 
 import sys
 from PyQt5 import QtWidgets, QtGui
-from Section4.Designer_code.Video2_4_slots_Design import Ui_MainWindow
+from Designer_code.Video2_4_slots_Design import Ui_MainWindow
 
 
 class RunDesignerGUI():
@@ -19,7 +19,7 @@ class RunDesignerGUI():
         
         def slot1():
             self.MainWindow.setWindowTitle("Slot 1 clicked!")
-        self.MainWindow.slot1 = slot1
+        self.MainWindow.slot1 = slot1       #QtWidgets has no slot1 attr - so to overcome it we add it
                 
         self.ui = Ui_MainWindow()                           
         self.ui.setupUi(self.MainWindow)

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>366</width>
+    <width>426</width>
     <height>296</height>
    </rect>
   </property>
@@ -117,8 +117,8 @@ background-color: rgb(255, 0, 255);
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>366</width>
-     <height>21</height>
+     <width>426</width>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -188,7 +188,7 @@ background-color: rgb(255, 0, 255);
     </hint>
     <hint type="destinationlabel">
      <x>61</x>
-     <y>-11</y>
+     <y>0</y>
     </hint>
    </hints>
   </connection>

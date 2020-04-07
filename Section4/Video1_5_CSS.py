@@ -8,7 +8,7 @@ Created on Mar 10, 2019
 
 import sys
 from PyQt5 import QtWidgets, QtGui
-from Section4.Designer_code.Video1_5_CSS_entire_UI_Design import Ui_MainWindow
+from Designer_code.Video1_5_CSS_entire_UI_Design import Ui_MainWindow
 
 
 class RunDesignerGUI():

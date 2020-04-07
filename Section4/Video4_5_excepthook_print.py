@@ -10,9 +10,9 @@ Created on Mar 11, 2019
 
 import sys
 from PyQt5 import QtWidgets, QtGui
-from Section4.Designer_code.Video4_Design import Ui_MainWindow
+from Designer_code.Video4_Design import Ui_MainWindow
 
-from Section4 import Video4_CATCH_EXCEPTIONS_PRINT
+import Video4_CATCH_EXCEPTIONS_PRINT
 
 
 class RunDesignerGUI():

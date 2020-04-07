@@ -10,7 +10,7 @@ Created on Mar 11, 2019
 
 import sys
 from PyQt5 import QtWidgets, QtGui
-from Section4.Designer_code.Video4_Design import Ui_MainWindow
+from Designer_code.Video4_Design import Ui_MainWindow
 
 
 class RunDesignerGUI():

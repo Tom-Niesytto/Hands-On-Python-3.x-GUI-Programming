@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>366</width>
-    <height>296</height>
+    <width>378</width>
+    <height>340</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -99,8 +99,8 @@ background-color: rgb(255, 0, 255);
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>366</width>
-     <height>21</height>
+     <width>378</width>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -149,8 +149,8 @@ background-color: rgb(255, 0, 255);
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>112</x>
-     <y>200</y>
+     <x>299</x>
+     <y>227</y>
     </hint>
     <hint type="destinationlabel">
      <x>178</x>

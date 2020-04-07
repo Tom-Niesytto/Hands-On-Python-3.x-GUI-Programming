@@ -22,9 +22,9 @@ def catch_exceptions(t, val, tb):
        tb=traceback
     '''   
    
-    QtWidgets.QMessageBox.critical(None,'An Exception was Raised',
-                                   'Value: {}'.format(val))
-
+    QtWidgets.QMessageBox.critical(None,'An Exception was Raised', 'Value: {}'.format(val))
+    #also use (print) the cached original sys.excepthook
+    
 sys.excepthook = catch_exceptions       # this sets up the hook to catch any uncaught exceptions
 
 
